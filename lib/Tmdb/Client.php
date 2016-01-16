@@ -336,7 +336,7 @@ class Client
 
         if (!$this->options['adapter']) {
             $this->options['adapter'] = new GuzzleAdapter(
-                new \GuzzleHttp\Client(['base_url' => $this->options['base_url']])
+                new \GuzzleHttp5\Client(['base_url' => $this->options['base_url']])
             );
         }
 

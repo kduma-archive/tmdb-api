@@ -17,11 +17,9 @@
         "ext-curl": "*",
         "symfony/event-dispatcher": "~2.4",
         "symfony/options-resolver": "~2.6",
-        "guzzlehttp/guzzle": "~5.0",
-        "guzzlehttp/cache-subscriber": "~0.1@dev",
-        "guzzlehttp/log-subscriber": "~1.0",
-        "guzzlehttp/retry-subscriber": "~2.0",
-        "psr/log": "~1.0"
+        "psr/log": "~1.0",
+        "doctrine/cache": "~1.3",
+        "react/promise": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.1",
@@ -31,7 +29,10 @@
         "monolog/monolog": "Required if you want to make use of logging features."
     },
     "autoload": {
-        "psr-4": { "Tmdb\\": "lib/Tmdb" }
+        "psr-4": {
+            "Tmdb\\": "lib/Tmdb",
+            "GuzzleHttp5\\": "guzzle/src/"
+        }
     },
     "extra": {
         "branch-alias": {

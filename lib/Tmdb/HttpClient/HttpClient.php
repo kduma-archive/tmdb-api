@@ -12,11 +12,11 @@
  */
 namespace Tmdb\HttpClient;
 
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
-use GuzzleHttp\Subscriber\Cache\CacheStorage;
-use GuzzleHttp\Subscriber\Cache\CacheSubscriber;
-use GuzzleHttp\Subscriber\Log\LogSubscriber;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
+use GuzzleHttp5\Subscriber\Cache\CacheStorage;
+use GuzzleHttp5\Subscriber\Cache\CacheSubscriber;
+use GuzzleHttp5\Subscriber\Log\LogSubscriber;
 use Monolog\Logger;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Tmdb\ApiToken;

@@ -12,11 +12,11 @@
  */
 namespace Tmdb\HttpClient\Adapter;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Message\ResponseInterface;
-use GuzzleHttp\Subscriber\Retry\RetrySubscriber;
+use GuzzleHttp5\Client;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Exception\RequestException;
+use GuzzleHttp5\Message\ResponseInterface;
+use GuzzleHttp5\Subscriber\Retry\RetrySubscriber;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Tmdb\Common\ParameterBag;
 use Tmdb\Exception\NullResponseException;
